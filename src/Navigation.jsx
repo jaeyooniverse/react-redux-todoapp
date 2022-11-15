@@ -1,7 +1,7 @@
 export default function Navigation() {
   return (
-    <div className='w-1/3 max-w-lg h-full p-20 rounded-3xl bg-white'>
-      <div className='flex rounded-xl pt-3 pb-3 hover:bg-slate-50'>
+    <div>
+      <div className='transition ease-in-out delay-200 flex rounded-xl pt-3 pb-3 hover:bg-slate-50 duration-300'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
@@ -18,7 +18,7 @@ export default function Navigation() {
         </svg>
         <h1 className='font-sans text-xl pl-3'>Home</h1>
       </div>
-      <div className='flex rounded-xl pt-3 pb-3 hover:bg-slate-50'>
+      <div className='transition ease-in-out delay-200 flex rounded-xl pt-3 pb-3 hover:bg-slate-50 duration-300'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'

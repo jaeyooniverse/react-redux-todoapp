@@ -1,11 +1,18 @@
-import Navigation from './Navigation';
+import { Routes, Route } from 'react-router-dom';
+
+import Layout from './Layout';
+import Main from './Main';
 import Today from './Today';
 
 export default function App() {
   return (
-    <div className='flex w-screen h-screen p-3 bg-slate-100'>
-      <Navigation />
-      <Today />
+    <div>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Main />} />
+          <Route path='/today' element={<Today />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
